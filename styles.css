@@ -1,0 +1,1440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* bitter font family */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+/* monserrat font family */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bitter: "Bitter", serif;
+    --monserrat: "Montserrat", sans-serif;
+}
+
+
+.container {
+    max-width: 1182px;
+    margin: 0 auto;
+    /* background-color: rgba(47, 0, 255, 0.249); */
+}
+
+/* ------------------------------  started styles of header section ------------------------------ */
+header {
+    padding-top: 30px;
+}
+
+header nav {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .navLogo {
+    width: 190px;
+    height: 56px;
+}
+
+nav .menuWrapper {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    width: 381px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 12px;
+}
+
+nav ul li,
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #15110d;
+    font-family: var(--bitter);
+}
+
+nav .menuWrapper .navBtns {
+    width: 268px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .navBtns .menuButton {
+    width: 40px;
+    height: 40px;
+    background-color: #f7f1e9;
+    border-radius: 12px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+nav .navBtns .menuButton:hover {
+    background-color: #faead4d5;
+}
+
+nav .navBtns .menuButton:active {
+    background-color: #faead431;
+}
+
+nav .navBtns .searchButton {
+    width: 40px;
+    height: 40px;
+    background-color: #f7f1e9;
+    border-radius: 12px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+nav .navBtns .searchButton:hover {
+    background-color: #faead4d5;
+}
+
+nav .navBtns .searchButton:active {
+    background-color: #faead431;
+}
+
+nav .navBtns button {
+    width: 91px;
+    height: 40px;
+    background-color: #f7f1e9;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav .navBtns button:hover {
+    background-color: #faead4d5;
+}
+
+nav .navBtns button:active {
+    background-color: #faead431;
+}
+
+/* ------------------------------/ ended styles of header section ------------------------------ */
+
+
+
+
+
+/* ------------------------------  started styles of intro section ------------------------------ */
+.intro {
+    padding-top: 40px;
+    background-image: url(./images/introDesktopFoto.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.165);
+}
+
+.intro .introWrapper {
+    position: relative;
+    height: 560px;
+}
+
+.intro .introWrapper img {
+    width: 100%;
+    height: 560px;
+}
+
+.introWrapper .introInfo {
+    max-width: 350px;
+    min-height: 296px;
+    position: absolute;
+    left: 120px;
+    bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.introWrapper .introInfo h1 {
+    font-family: var(--bitter);
+    color: #15110d;
+    line-height: 56px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.introWrapper .introInfo p {
+    font-family: var(--bitter);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+    color: #15110d;
+}
+
+.introWrapper .introInfo button {
+    width: 127px;
+    height: 40px;
+    background-color: #ca9647;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    transition: all 0.2s ease-in-out;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+.introWrapper .introInfo button:hover {
+    background-color: #ca9647d4;
+}
+
+.introWrapper .introInfo button:active {
+    background-color: #ce9034e8;
+}
+
+.introWrapper .introInfo button p {
+    font-family: var(--bitter);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+}
+
+/* ------------------------------/ ended styles of intro section ------------------------------ */
+
+
+
+
+
+
+/* ------------------------------ started styles of main section ------------------------------ */
+main {
+    padding-top: 56px;
+}
+
+.inputWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputWrapper .card {
+    width: 61.5%;
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.inputWrapper .card .input {
+    width: 100%;
+    min-height: 64px;
+    border-radius: 32px;
+    border: 1px solid #D3A562;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .innerCard {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    min-height: 64px;
+}
+
+.input label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input label img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.card .input input {
+    width: 100%;
+    min-height: 64px;
+    border: none;
+    outline: none;
+    margin-left: 12px;
+    background-color: initial;
+}
+
+.card .input input::placeholder {
+    font-family: var(--bitter);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #757982;
+}
+
+.card .input button {
+    width: 95px;
+    height: 40px;
+    padding: 10px 24px 10px 24px;
+    border-radius: 12px;
+    opacity: 0px;
+    background-color: #D3A562;
+    display: grid;
+    place-content: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.card .input button:hover {
+    background-color: #ca9647c8;
+}
+
+.card .input button:active {
+    background-color: #ce9034e8;
+}
+
+.card .input button p {
+    font-family: var(--bitter);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: white;
+}
+
+main .mainBox {
+    width: 100%;
+    min-height: 1576px;
+    margin-top: 67px;
+}
+
+.mainBox .mainBoxWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.mainBox .mainBoxLeft {
+    width: 30.7%;
+    min-height: 1576px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mainBox .mainBoxLeft .leftBorder {
+    width: 100%;
+    height: 1px;
+    background-color: #D3A562;
+}
+
+.mainBox .mainBoxLeft .leftCard {
+    width: 100%;
+    min-height: 232px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mainBox .mainBoxLeft .leftCard .title {
+    font-family: var(--bitter);
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #ca9647;
+}
+
+.mainBox .mainBoxLeft .leftCard h2 {
+    font-family: var(--monserrat);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #15110d;
+}
+
+.mainBox .mainBoxLeft .leftCard .txt {
+    color: #2b2823;
+    font-family: var(--bitter);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding-right: 16px;
+}
+
+.mainBox .mainBoxWrapper .border {
+    border: 1px solid #bdbdbd3f;
+    width: 0.5px;
+    height: 1576px;
+}
+
+.mainCenter {
+    display: none;
+}
+
+.mainBox .mainBoxRight {
+    width: 63%;
+    min-height: 1552px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mainBox .mainBoxRight .title {
+    color: #ca9647;
+    font-family: var(--bitter);
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.mainBox .mainBoxRight h1 {
+    color: #15110d;
+    font-family: var(--monserrat);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+}
+
+.mainBox .mainBoxRight .txt {
+    color: #2b2923;
+    font-family: var(--bitter);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.mainBox .mainBoxRight .rightCard1 {
+    width: 100%;
+    min-height: 232px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.mainBox .mainBoxRight .rightCard1 .rightCardInfos {
+    width: 50%;
+    min-height: 232px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding-right: 10px;
+    z-index: 1;
+}
+
+.mainBox .mainBoxRight .rightCard1 .img {
+    width: 344px;
+    padding-top: 6px;
+}
+
+.mainBox .mainBoxRight .rightCard1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.mainBox .mainBoxRight .rightBorder {
+    width: 100%;
+    height: 1px;
+    background-color: #D3A562;
+}
+
+.mainBox .mainBoxRight .rightCard2 {
+    width: 100%;
+    min-height: 224px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainBox .mainBoxRight .rightCard2 div {
+    display: flex;
+}
+
+.mainBox .mainBoxRight .rightCard2 .textButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 96px;
+}
+
+.mainBox .mainBoxRight .rightCard2 .textButton div {
+    width: 60%;
+}
+
+.mainBox .mainBoxRight .rightCard2 .textButton div p {
+    font-family: var(--bitter);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #2b2823;
+}
+
+.mainBox .mainBoxRight .rightCard2 button {
+    width: 127px;
+    height: 40px;
+    background-color: #D3A562;
+    border-radius: 12px;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 16px;
+}
+
+.mainBox .mainBoxRight .rightCard2 button:hover {
+    background-color: #ca9647d4;
+}
+
+.mainBox .mainBoxRight .rightCard2 button:active {
+    background-color: #ce9034e8;
+}
+
+.mainBox .mainBoxRight .rightCard2 button p {
+    font-family: var(--bitter);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: white;
+}
+
+.mainBox .mainBoxRight .rightCard3 {
+    width: 100%;
+    min-height: 608px;
+    position: relative;
+}
+
+.mainBox .mainBoxRight .rightCard3 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.mainBox .mainBoxRight .rightCard3 .rightCard3Infos {
+    background-color: #757982;
+    width: 406px;
+    height: 332px;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: grid;
+    place-content: center;
+}
+
+.mainBox .mainBoxRight .rightCard3 .rightCard3Infos .box {
+    max-width: 342px;
+    min-height: 268px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.mainBox .mainBoxRight .rightCard3 .rightCard3Infos .box .title {
+    color: #ffffff;
+    font-family: var(--bitter);
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.mainBox .mainBoxRight .rightCard3 .rightCard3Infos .box h2 {
+    color: #ffffff;
+    font-family: var(--monserrat);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+}
+
+.mainBox .mainBoxRight .rightCard3 .rightCard3Infos .box .text {
+    color: #f1f1f2;
+    font-family: var(--bitter);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+
+.mainCenter .mainCenterImg {
+    display: none;
+}
+
+
+main .disabled{
+    display: none;
+}
+/* ------------------------------/ ended styles of main section ------------------------------ */
+
+
+
+
+
+
+/* ------------------------------ started styles of footer section ------------------------------ */
+footer {
+    padding: 80px 0 18px 0;
+}
+
+footer .footer {
+    width: 100%;
+    min-height: 371px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .fBox1 {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.footer .fBox1 .navLogo {
+    width: 193px;
+    height: 56px;
+}
+
+.menuTable {
+    display: none;
+}
+
+.footer .menuButton {
+    width: 40px;
+    height: 40px;
+    background-color: #f7f1e9;
+    border-radius: 12px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.footer.menuButton:hover {
+    background-color: #faead4d5;
+}
+
+.footer .menuButton:active {
+    background-color: #faead431;
+}
+
+.footer .fBox1 ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 451px;
+    list-style: none;
+}
+
+.footer .fBox1 ul li a {
+    text-decoration: none;
+    font-family: var(--bitter);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #15110d;
+}
+
+.footer .fBox2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .fBox2 .infos {
+    width: 69.88%;
+    min-height: 107px;
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    border-right: 1px solid rgba(128, 128, 128, 0.374);
+}
+
+.footer .fBox2 .infos .infosBox {
+    width: 200px;
+    height: 107px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .fBox2 .infos .infosBox2 {
+    display: none;
+}
+
+.footer .fBox2 p {
+    color: #15130d;
+    font-family: var(--bitter);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer .fBox2 .social {
+    width: 156px;
+    min-height: 107px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .fBox2 .social div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .fBox2 .social div img {
+    width: 36px;
+    height: 36px;
+}
+
+.footer .fBox3 {
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .fBox3 .insideBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .insideFooter {
+    display: none;
+}
+
+.footer .fBox3 span {
+    color: #15130d;
+    font-family: var(--monserrat);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer .fBox3 .valute {
+    width: 351px;
+    min-height: 48px;
+    background-color: #888C94;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer .fBox3 .valute p {
+    font-family: var(--monserrat);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: white;
+}
+
+.footer .fBox3 .bankCard {
+    width: 274px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.footer .pay{
+    display: none;
+}
+
+
+
+
+
+/* -------------------------------------------- All responsive styles started -------------------------------------------- */
+@media only screen and (max-width:1200px) {
+
+    /* header */
+    header {
+        padding: 20px 20px 0 20px;
+    }
+
+    /* intro */
+    .intro {
+        padding: 0 20px;
+    }
+
+    /* main */
+    .card .input input {
+        margin: 0 12px;
+    }
+
+    main .mainBox {
+        padding: 0 20px;
+    }
+
+
+    .mainCenter {
+        display: none;
+    }
+
+    .mainCenter .mainCenterImg {
+        display: none;
+    }
+
+    /* footer */
+    .footer {
+        padding: 0 20px;
+    }
+
+    .footer .pay{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:894px) {
+
+    /* header */
+    header nav ul {
+        display: none;
+    }
+
+    nav .menuWrapper {
+        width: auto;
+    }
+
+    .introWrapper .introInfo {
+        left: 64px;
+    }
+
+    /* main */
+    .inputWrapper .card {
+        width: 80%;
+    }
+
+    .mainBox .mainBoxWrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .mainBox .mainBoxRight {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .mainBox .mainBoxWrapper .border {
+        display: none;
+    }
+
+    .mainBox .mainBoxLeft {
+        width: 100%;
+    }
+
+    .mainBox .mainCenter {
+        width: 100%;
+        min-height: 513px;
+        display: flex;
+        justify-content: space-between;
+        margin: 38px 0;
+    }
+
+    .mainCenter .mainCenterImg {
+        display: none;
+    }
+
+    .mainBox .mainCenter .foto {
+        width: auto;
+    }
+
+    .mainBox .mainCenter .box {
+        width: 590px;
+        min-height: 513px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 12px;
+    }
+
+    .mainBox .mainCenter .box .title {
+        color: #ca9647;
+        font-family: var(--bitter);
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .mainBox .mainCenter .box h1 {
+        color: #15110d;
+        font-family: var(--monserrat);
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        width: 100px;
+    }
+
+    .mainBox .mainCenter .box .textWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mainBox .mainCenter .box .textWrapper div {
+        max-width: 415px;
+    }
+
+    .mainBox .mainCenter .box .textWrapper p {
+        color: #2b2823;
+        font-family: var(--bitter);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+    }
+
+    .mainBox .mainCenter .box .textWrapper button {
+        width: 127px;
+        height: 40px;
+        border: none;
+        outline: none;
+        background-color: #ca9647;
+        border-radius: 12px;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 32px;
+    }
+
+    .mainBox .mainCenter .box .textWrapper button:hover {
+        background-color: #ca9647d4;
+    }
+
+    .mainBox .mainCenter .box .textWrapper button:active {
+        background-color: #ce9034e8;
+    }
+
+    .mainBox .mainCenter .box .textWrapper button p {
+        color: white;
+    }
+
+    /* footer */
+    footer .footer .menu1 {
+        display: none;
+    }
+
+    footer .footer .menuTable {
+        display: flex;
+        width: 468px;
+    }
+
+    .footer .fBox2 .infos {
+        width: 62%;
+    }
+
+    .footer .fBox2 .infos .infosBox2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 200px;
+    }
+
+    .footer .fBox2 .infos {
+        border-right: 0px solid rgba(128, 128, 128, 0);
+    }
+
+    .footer .fBox3 .valute {
+        display: none;
+    }
+
+    .footer .insideFooter {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        min-height: 48px;
+        border-radius: 28px;
+        background-color: #757982;
+        margin-top: 12px;
+        padding: 0 36px;
+    }
+
+    .footer .insideFooter div {
+        width: 46%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .footer .insideFooter p {
+        color: white;
+        font-family: var(--monserrat);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .footer .pay{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:700px) {
+
+    /* footer */
+    footer .footer .menuTable {
+        display: flex;
+        width: 65%;
+    }
+
+    .footer .fBox2 .infos {
+        width: 70%;
+        border-right: 0px solid rgba(128, 128, 128, 0);
+    }
+
+    .footer .fBox2 .infos .infosBox {
+        width: 180px;
+        border-right: 1px solid rgba(128, 128, 128, 0.374);
+    }
+
+    .footer .fBox2 .infos .infosBox2 {
+        width: 200px;
+        margin-right: 12px;
+        padding-left: 24px;
+        border-right: 1px solid rgba(128, 128, 128, 0.374);
+    }
+
+    .footer .insideFooter {
+        flex-wrap: wrap;
+        padding: 0 24px;
+        min-height: 88px;
+    }
+
+    .footer .insideFooter div {
+        width: 46%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer .pay{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:575px) {
+
+    /* header */
+    nav .menuWrapper .navBtns {
+        width: 220px;
+    }
+
+    /* main */
+    main .inputWrapper {
+        padding: 0 20px;
+    }
+
+    .inputWrapper .card {
+        width: 100%;
+    }
+
+    .inputWrapper .card .input {
+        flex-wrap: wrap;
+    }
+
+    .inputWrapper .card .input {
+        width: 100%;
+        min-height: 64px;
+        border-radius: 0;
+        border: 0px solid #d3a66200;
+        padding: 0;
+    }
+
+    .card .innerCard {
+        width: 100%;
+        min-height: 64px;
+        border-radius: 32px;
+        border: 1px solid #D3A562;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card .input button {
+        width: 100%;
+        height: 40px;
+        padding: 10px 24px 10px 24px;
+        border-radius: 12px;
+        opacity: 0px;
+        background-color: #D3A562;
+        display: grid;
+        place-content: center;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        margin-top: 20px;
+    }
+
+    .mainBox .mainBoxRight .rightCard1 {
+        flex-direction: column;
+    }
+
+    .mainBox .mainBoxRight .rightCard1 .rightCardInfos {
+        width: 100%;
+    }
+
+    .mainBox .mainBoxRight .rightCard1 .img {
+        width: 100%;
+        height: auto;
+        padding-top: 16px;
+    }
+
+    .mainBox .mainBoxRight .rightCard1 .img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mainBox .mainBoxRight .rightCard3 {
+        width: 100%;
+        min-height: auto;
+        position: relative;
+    }
+
+    .mainBox .mainBoxRight .rightCard3 img {
+        display: none;
+    }
+
+    .mainBox .mainBoxRight .rightCard3 .rightCard3Infos {
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .mainBox .mainCenter {
+        flex-direction: column-reverse;
+    }
+
+    .mainBox .mainCenter .box {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .mainCenter .mainCenter1 {
+        display: none;
+    }
+
+    .mainCenter .mainCenterImg {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+
+
+
+    .mainBox .mainBoxRight .rightCard3 {
+        display:none;
+    }
+
+
+    /* foooter */
+    .footer .fBox2 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px 0;
+    }
+
+    .footer .fBox2 .infos {
+        width: 100%;
+        min-height: 107px;
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+        border-right: 0px solid rgba(128, 128, 128, 0);
+    }
+
+    .footer .fBox2 .social {
+        width: 100%;
+        min-height: 41px;
+        margin-top: 32px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer .fBox2 .social p {
+        position: absolute;
+        left: 0;
+        top: 9px;
+    }
+
+    .footer .fBox2 .social div {
+        display: flex;
+        justify-content: space-between;
+        width: 176px;
+        position: absolute;
+        right: 0;
+    }
+
+    .footer .fBox2 .infos .infosBox2 {
+        margin-right: 0px;
+    }
+
+    footer .footer .menuTable {
+        width: auto;
+    }
+
+    .footer .menuTable .menu2 {
+        display: none;
+    }
+
+    .footer .pay{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:472px) {
+
+    
+    header {
+        padding: 16px 16px 0 16px;
+    }
+ 
+    .intro {
+        padding: 0 16px;
+    }
+
+    main .mainBox {
+        padding: 0 16px;
+    }
+
+    .footer {
+        padding: 0 16px;
+    }
+
+    header nav {
+        height: 42px;
+    }
+
+    nav .menuWrapper .navBtns {
+        width: 200px;
+    }
+
+    nav .navLogo {
+        width: 138px;
+        height: 40px;
+    }
+
+    .introWrapper .introInfo {
+        left: 32px;
+    }
+
+
+    .mainBox .mainBoxRight h1 {
+       
+        font-size:26px;
+        
+    }
+
+    /* footer */
+    .footer .fBox2 .infos {
+        width: 100%;
+        min-height: 107px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: start;
+        border-right: 0px solid rgba(128, 128, 128, 0);
+    }
+
+    .footer .fBox2 .infos .infosBox {
+        width: 100%;
+        height: 112px;
+        display: flex;
+        align-items: center;
+        padding: 12px 0;
+        border-right: 0px solid rgba(128, 128, 128, 0);
+        border-bottom: 1px solid rgba(128, 128, 128, 0.374);
+    }
+
+    .footer .fBox2 .infos .infosBox2 {
+        width: 100%;
+        height: 112px;
+        display: flex;
+        align-items: center;
+        padding: 12px 0;
+        border-right: 0px solid rgba(128, 128, 128, 0);
+        border-bottom: 1px solid rgba(128, 128, 128, 0.374);
+    }
+
+    .footer .fBox2 .social {
+        width: 100%;
+        min-height: 80px;
+        margin-top: 32px;
+        margin-top: 4px;
+    }
+
+    .footer .fBox2 .social p {
+        top: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .fBox2 .social div {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 0 32px;
+        justify-content: space-evenly;
+    }
+
+    .footer .fBox3 .insideBox {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 4px;
+    }
+
+    .footer .fBox3 .insideBox span{
+        margin-top: -16px;
+        margin-bottom: 12px;
+    }
+
+    .footer .fBox3 .bankCard {
+        display: none;
+    }
+
+    .footer .pay{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+        padding: 0 12px;
+    }
+
+    .footer .insideFooter{
+        padding: 16px 40px;
+    }
+
+    .footer .insideFooter div {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer .insideFooter div p {
+        padding: 0 12px;
+    }
+}
+
+
+@media only screen and (max-width:375px) {
+
+    /* header */
+    header {
+        padding: 16px 10px 0 10px;
+    }
+
+    nav .menuWrapper .navBtns {
+        width: auto;
+    }
+
+    nav .searchButton {
+        display: none;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    /* intro */
+    .intro {
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+
+    .introWrapper .introInfo {
+        max-width: 300px;
+        min-height: 200px;
+        left: 16px;
+    }
+
+    .introWrapper .introInfo h1 {
+        font-family: var(--bitter);
+        color: #15110d;
+        line-height: 32px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .introWrapper .introInfo p {
+        font-family: var(--bitter);
+        color: #15110d;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        text-align: left;
+    }
+
+    .introWrapper .introInfo button {
+        margin-top: 12px;
+    }
+}
+
+
+@media only screen and (max-width:272px) {
+    .introWrapper .introInfo {
+        left: 0;
+    }
+}
